@@ -1,8 +1,4 @@
-function makePromise (value, delay) {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(value), delay)
-  })
-}
+const makePromise = require('./make-promise')
 
 function async (fn) {
   const it = fn()
